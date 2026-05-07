@@ -21,8 +21,8 @@ def test_date_inference_yyyy_mm_dd():
 
 def test_date_inference_invalid():
     """Test invalid filename format."""
-    start, end = infer_dates_from_filename("statement.pdf")
-    assert start is None
+    result = infer_dates_from_filename("statement.pdf")
+    assert result is None
 
 
 def test_inference_error_message():

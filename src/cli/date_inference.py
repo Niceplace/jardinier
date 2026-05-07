@@ -6,9 +6,9 @@ from pathlib import Path
 from typing import Optional, Tuple
 
 # Patterns: 20240131.pdf or 2024-01-31.pdf
-DATE_PATTERN = re.compile(r"(\d{4})[-._](\d{2})[-._](\d{2})")
+DATE_PATTERN = re.compile(r"(\d{4})[-._]?(\d{2})[-._]?(\d{2})")
 
-# Pattern with dashes: 2024-01-31.pdf
+
 DATE_WITH_DASHES_PATTERN = re.compile(r"(\d{4})-(\d{2})-(\d{2})")
 
 

@@ -34,7 +34,7 @@ def test_account_not_found():
 
 def test_timeout_on_validation():
     """Test timeout during validation."""
-    with patch("httpx.get", side_effect=httpx.TimeoutError("Timeout")):
+    with patch("httpx.get", side_effect=httpx.TimeoutException("Timeout")):
         valid, error = validate_account_id(1, "http://test.com", "token")
 
     assert valid is False

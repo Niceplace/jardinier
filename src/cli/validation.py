@@ -35,7 +35,7 @@ def validate_account_id(
                 f"Failed to validate account ID {account_id}: HTTP {response.status_code}",
             )
 
-    except httpx.TimeoutError:
+    except httpx.TimeoutException:
         return False, f"Timeout validating account ID {account_id}"
     except httpx.RequestError as e:
         return False, f"Network error validating account ID {account_id}: {e}"
