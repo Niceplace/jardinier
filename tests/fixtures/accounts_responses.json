@@ -1,0 +1,21 @@
+{
+  "valid_account": {
+    "id": 1,
+    "type": "asset",
+    "attributes": {
+      "name": "Credit Card"
+    }
+  },
+  "invalid_account": {
+    "detail": "Account not found",
+    "status": 404
+  },
+  "successful_batch": {
+    "data": {
+      "created": ["group_1", "group_2"]
+    }
+  },
+  "failed_batch": {
+    "error": "Invalid transaction"
+  }
+}

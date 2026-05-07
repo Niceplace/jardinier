@@ -1,0 +1,10 @@
+{
+  "successful_batch": {
+    "data": {
+      "created": ["group_1", "group_2"]
+    }
+  },
+  "failed_batch": {
+    "error": "Invalid transaction"
+  }
+}
